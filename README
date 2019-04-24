@@ -1,0 +1,22 @@
+Movie Cruiser Case Study
+
+Objective:-
+
+-> This is an online application that helps manage movies listed on Movie Database (TMDb).
+-> For movie management, the application uses Movie Database (TMDb) API available at https://www.themoviedb.org/documentation/api 
+-> Using this app, a user should be able to search and manage movies.
+
+Functional Requirements:-
+
+-> App should allow users to perform the following activities:
+
+a. Save information of a movie with comments 
+b. View saved movie information
+c. Update comments of a saved movie 
+d. Delete a movie e. save the favourite list of movies f. Search movie
+
+Non-functional Requirements:-
+
+-> App should be accessible from any location with access to the Internet. 
+-> App should be responsive to display consistently across multiple device screens.
+-> App should have an intuitive UI that can be operated by novice- expert Internet users

@@ -1,0 +1,19 @@
+.card {
+	border: 0px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.media img {
+	height: 250px;
+	width: auto;
+}
+
+.container {
+	
+	font-size: 12px;
+	padding: 2px 0px;
+}
+
+#mov {
+	color:  cadetblue;
+}

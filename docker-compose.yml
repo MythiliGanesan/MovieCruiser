@@ -1,0 +1,32 @@
+version: '3'
+services:
+  user-app:
+   image: user-app
+   build: AuthenticationService/
+   network_mode: host
+   ports:
+    - '8089:8089'
+   expose:
+    - 8089
+   depends_on:
+    - movie-mysql
+  movie-app:
+    image: movie-app
+    build: Backend/
+    network_mode: host
+    ports:
+      - '8080:8080'
+    expose:
+      - 8080
+    depends_on:
+      - movie-mysql
+  movie-mysql:
+    image: mysql:5.5
+    network_mode: host
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: movieDb

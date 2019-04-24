@@ -1,0 +1,19 @@
+<h1 class="text-center">Top Playing Movies </h1>
+<div class="container" *ngIf="nowPlayingMovies.length > 0">
+    <div class="row flex-column-reverse flex-md-row">
+      <div class="col-md-4" *ngFor="let movie of nowPlayingMovies">
+        <div class="card-body">  
+          <div class="card text-center">
+            <a (click)="goToDetail(movie.id)">
+              <div class="card-img">
+                <img class="card-img" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="{{movie.title}}">
+             </div> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
